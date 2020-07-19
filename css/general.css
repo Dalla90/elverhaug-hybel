@@ -1,0 +1,36 @@
+/* Overwrite bootstrap*/
+.container{
+}
+/* Removes the gradient on the left and right button in the carousel*/
+/*.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+}*/
+
+body { 
+	padding-top: 70px; 
+	padding-bottom: 10px;
+}
+.img-wrapper{
+	/*Must have a spesific height, do not know why height: 100% did not work*/
+	height: 450px;
+	width: 100%;
+	background-color: #e7e7e7;
+}
+#hybel_carousel {
+	top: -20px;
+}
+.img-carousel {
+	/*Makes sure the image is not bigger than the img-wrapper*/
+	max-height: 400px;
+	/* Vertically aligns the image in the img-wrapper*/
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+.text-red-bold {
+	color: red;
+	font-weight: bold;
+}
